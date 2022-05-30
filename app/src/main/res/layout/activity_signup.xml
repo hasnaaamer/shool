@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/text_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create an account"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_sign_up"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/fir_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="First name"
+        android:textSize="25dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_create"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/enter_fir_name2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".40"
+        app:layout_constraintStart_toStartOf="@id/fir_name"
+        app:layout_constraintTop_toBottomOf="@id/fir_name"
+        android:layout_marginTop="20dp"
+        android:hint="enter your first name"
+        />
+
+    <TextView
+        android:id="@+id/sec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:text="Second name"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fir_name"
+        app:layout_constraintTop_toBottomOf="@id/text_create" />
+
+    <EditText
+        android:id="@+id/enter_sec_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/sec_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".40"
+        app:layout_constraintTop_toBottomOf="@id/sec_name"
+        android:layout_marginTop="20dp"
+        android:hint="enter your second name"
+
+        />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/enter_your_e_mail"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_fir_name2" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="enter your second name"
+        />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="password"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_email" />
+    <EditText
+        android:id="@+id/enter_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/pass"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".40"
+        android:hint="enter your second name"
+        />
+
+    <TextView
+        android:id="@+id/con_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="confirm password"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/sec_name"
+        app:layout_constraintTop_toBottomOf="@id/enter_email" />
+
+    <EditText
+        android:id="@+id/enter_pass2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="enter your second name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/con_pass"
+        app:layout_constraintTop_toBottomOf="@+id/con_pass"
+        app:layout_constraintWidth_percent=".40" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="sign"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_pass"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
